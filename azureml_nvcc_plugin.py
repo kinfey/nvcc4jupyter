@@ -6,5 +6,5 @@ def load_ipython_extension(ip):
     azure_ml_nvcc_plugin = NVCC_V1(ip)
     ip.register_magics(azure_ml_nvcc_plugin)
 
-    azure_nvcc_plugin_v2 = NVCC_V2(ip)
-    ip.register_magics(azure_ml_nvcc_plugin)
+    azure_ml_nvcc_plugin_v2 = NVCC_V2(ip)
+    ip.register_magics(azure_ml_nvcc_plugin_v2)
