@@ -21,7 +21,7 @@ class NVCCPlugin(Magics):
     @staticmethod
     def compile(file_path):
         subprocess.check_output(
-            [compiler, '-arch=_sm37', file_path + ext, "-o", file_path + ".out", '-Wno-deprecated-gpu-targets'], stderr=subprocess.STDOUT)
+            [compiler, '-arch=sm_37', file_path + ext, "-o", file_path + ".out", '-Wno-deprecated-gpu-targets'], stderr=subprocess.STDOUT)
 
     def run(self, file_path, timeit=False):
         if timeit:
