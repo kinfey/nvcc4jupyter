@@ -9,10 +9,10 @@ compiler = '/usr/local/cuda/bin/nvcc'
 
 
 @magics_class
-class NVCCPluginV2(Magics):
+class AzureNVCCPluginV2(Magics):
 
     def __init__(self, shell):
-        super(NVCCPluginV2, self).__init__(shell)
+        super(AzureNVCCPluginV2, self).__init__(shell)
         self.argparser = helper.get_argparser()
         current_dir = os.getcwd()
         self.output_dir = os.path.join(current_dir, 'src')

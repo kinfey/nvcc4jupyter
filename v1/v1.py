@@ -11,10 +11,10 @@ ext = '.cu'
 
 
 @magics_class
-class NVCCPlugin(Magics):
+class AzureNVCCPlugin(Magics):
 
     def __init__(self, shell):
-        super(NVCCPlugin, self).__init__(shell)
+        super(AzureNVCCPlugin, self).__init__(shell)
 
         self.argparser = helper.get_argparser()
 
