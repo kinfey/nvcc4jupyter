@@ -3,8 +3,8 @@ from v2.v2 import AzureNVCCPluginV2 as NVCC_V2
 
 
 def load_ipython_extension(ip):
-    azureml_nvcc_plugin = NVCC_V1(ip)
-    ip.register_magics(azureml_nvcc_plugin)
+    azure_ml_nvcc_plugin = NVCC_V1(ip)
+    ip.register_magics(azure_ml_nvcc_plugin)
 
-    azureml_nvcc_plugin_v2 = NVCC_V2(ip)
-    ip.register_magics(azureml_nvcc_plugin_v2)
+    azure_nvcc_plugin_v2 = NVCC_V2(ip)
+    ip.register_magics(azure_ml_nvcc_plugin)
