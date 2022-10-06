@@ -20,6 +20,7 @@ class NVCCPlugin(Magics):
 
     @staticmethod
     def compile(file_path):
+        print(compiler + ' -arch=sm_37' + file_path + ext +  "-o" + file_path + ".out")
         subprocess.check_output(
             [compiler, '-arch=sm_37', file_path + ext, "-o", file_path + ".out"], stderr=subprocess.STDOUT)
 
